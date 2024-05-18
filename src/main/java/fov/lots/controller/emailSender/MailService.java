@@ -1,7 +1,8 @@
-package fov.lots.controller.emailSender;
+package fov.lots.Controller.emailSender;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 @RequiredArgsConstructor
 public class MailService {
-
+  
   private final JavaMailSender mailSender;
 
   public void sendEmail(String toEmail, String title, String text) {
