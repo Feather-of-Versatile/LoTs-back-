@@ -1,13 +1,12 @@
-package FoV.LoTs.DTO;
+package fov.lots.DTO;
 
-import FoV.LoTs.DB.Entity.User;
 import jakarta.validation.constraints.*;
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.AllArgsConstructor;
 
-
+import fov.lots.DB.Entity.User;
 
 @Getter
 @Setter

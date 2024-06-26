@@ -1,4 +1,4 @@
-package FoV.LoTs.Global.Config;
+package fov.lots.Global.Config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

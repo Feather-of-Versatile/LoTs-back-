@@ -1,4 +1,4 @@
-package FoV.LoTs.Global.Config;
+package fov.lots.Global.Config;
 
 import lombok.Getter;
 import lombok.Setter;
