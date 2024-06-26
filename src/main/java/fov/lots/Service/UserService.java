@@ -1,16 +1,16 @@
-package FoV.LoTs.Service;
+package fov.lots.Service;
 
-import FoV.LoTs.DB.Repository.UserRepository;
-import FoV.LoTs.DTO.SignUpRequestDTO;
-import FoV.LoTs.DTO.SignUpResponseDTO;
-import FoV.LoTs.DTO.LoginRequestDTO;
-import FoV.LoTs.DTO.LoginResponseDTO;
+import fov.lots.DB.Repository.UserRepository;
+import fov.lots.DTO.SignUpRequestDTO;
+import fov.lots.DTO.SignUpResponseDTO;
+import fov.lots.DTO.LoginRequestDTO;
+import fov.lots.DTO.LoginResponseDTO;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Service;
 
-import FoV.LoTs.DB.Entity.User;
+import fov.lots.DB.Entity.User;
 
 import java.util.Optional;
 
