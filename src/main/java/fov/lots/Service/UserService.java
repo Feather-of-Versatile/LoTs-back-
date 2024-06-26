@@ -3,6 +3,8 @@ package fov.lots.Service;
 import fov.lots.DB.Repository.UserRepository;
 import fov.lots.DTO.SignUpRequestDTO;
 import fov.lots.DTO.SignUpResponseDTO;
+import fov.lots.Global.Security.TokenDto;
+import fov.lots.Global.Security.TokenProvider;
 import fov.lots.DTO.LoginRequestDTO;
 import fov.lots.DTO.LoginResponseDTO;
 
@@ -20,6 +22,9 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private TokenProvider tokenProvider;
+
     public SignUpResponseDTO signUp(SignUpRequestDTO dto) {
         User user = userRepository.save(dto.to());
 
@@ -30,7 +35,8 @@ public class UserService {
     public LoginResponseDTO login(LoginRequestDTO dto) {
         try {
             User user = userRepository.findOneByEmailAndPassword(dto.getEmail(), dto.getPassword());
-            LoginResponseDTO responseDTO = new LoginResponseDTO(user.GetId(), user.GetPassword());
+            TokenDto tokenDto = tokenProvider.generateTokenDto(user.GetId());
+            LoginResponseDTO responseDTO = new LoginResponseDTO(tokenDto.getAccessToken(), tokenDto.getRefreshToken());
 
             return responseDTO;
         } catch (Exception e) {

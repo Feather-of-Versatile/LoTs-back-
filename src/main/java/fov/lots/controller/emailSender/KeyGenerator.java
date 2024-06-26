@@ -1,4 +1,5 @@
-package fov.lots.Controller.emailSender;
+package fov.lots.Controller.EmailSender;
+
 
 import org.springframework.stereotype.Component;
 
@@ -23,7 +24,5 @@ public class KeyGenerator {
 
     // 인증키 반환.안승준
     return key.toString();
-
   }
-
 }

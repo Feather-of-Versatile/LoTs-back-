@@ -1,4 +1,4 @@
-package fov.lots.Controller.emailSender;
+package fov.lots.Controller.EmailSender;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
