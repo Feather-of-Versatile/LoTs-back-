@@ -1,4 +1,4 @@
-package FoV.LoTs.controller.emailSender;
+package fov.lots.Controller.emailSender;
 
 import org.springframework.stereotype.Component;
 

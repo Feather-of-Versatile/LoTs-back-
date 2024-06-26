@@ -1,4 +1,4 @@
-package FoV.LoTs.DTO;
+package fov.lots.DTO;
 
 import lombok.Getter;
 import lombok.Setter;

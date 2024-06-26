@@ -1,7 +1,7 @@
-package FoV.LoTs.DTO;
+package fov.lots.DTO;
 
 import lombok.Getter;
-import FoV.LoTs.DB.Entity.User;
+import fov.lots.DB.Entity.User;
 
 import jakarta.validation.constraints.*;
 

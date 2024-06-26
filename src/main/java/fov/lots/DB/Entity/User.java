@@ -1,4 +1,4 @@
-package FoV.LoTs.DB.Entity;
+package fov.lots.DB.Entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.Comment;
