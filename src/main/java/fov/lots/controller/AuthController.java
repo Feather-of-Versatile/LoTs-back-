@@ -1,5 +1,10 @@
-package fov.lots.Controller;
+package FoV.LoTs.controller;
 
+import FoV.LoTs.DTO.LoginRequestDTO;
+import FoV.LoTs.DTO.LoginResponseDTO;
+import FoV.LoTs.DTO.SignUpRequestDTO;
+import FoV.LoTs.DTO.SignUpResponseDTO;
+import FoV.LoTs.Service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -8,11 +13,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
-import fov.lots.Service.UserService;
-import fov.lots.DTO.LoginRequestDTO;
-import fov.lots.DTO.LoginResponseDTO;
-import fov.lots.DTO.SignUpRequestDTO;
-import fov.lots.DTO.SignUpResponseDTO;
+
 
 @CrossOrigin(origins = "*")
 @RestController

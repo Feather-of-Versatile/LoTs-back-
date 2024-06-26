@@ -1,7 +1,8 @@
-package fov.lots.Global.Config;
+package FoV.LoTs.Global.Config;
 
-import fov.lots.Global.Security.TokenProvider;
-import fov.lots.Global.Security.JwtFilter;
+
+import FoV.LoTs.Global.Security.JwtFilter;
+import FoV.LoTs.Global.Security.TokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,5 +1,5 @@
 plugins {
-	java
+	id ("java")
 	id("org.springframework.boot") version "3.2.5"
 	id("io.spring.dependency-management") version "1.1.4"
 }
@@ -46,6 +46,8 @@ dependencies {
 	implementation("io.jsonwebtoken:jjwt-api:0.11.2")
   	runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.2")
   	runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.2")
+
+	implementation ("org.springframework.boot:spring-boot-starter-webflux")
 }
 
 dependencyManagement {
