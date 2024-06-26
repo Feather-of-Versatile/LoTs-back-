@@ -1,4 +1,4 @@
-package fov.lots.Global.Security;
+package FoV.LoTs.Global.Security;
 
 import lombok.*;
 

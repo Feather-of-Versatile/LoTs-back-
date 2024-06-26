@@ -1,4 +1,4 @@
-package fov.lots.Global.Config;
+package FoV.LoTs.Global.Config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,7 +14,7 @@ import java.util.Properties;
 @Configuration
 public class EmailConfig {
     @Autowired
-    private MailPropertie mailProperties;
+    private fov.lots.Global.Config.MailPropertie mailProperties;
 
     @Value("${spring.mail.host}")
     private String host;

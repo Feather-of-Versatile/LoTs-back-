@@ -1,4 +1,4 @@
-package fov.lots.Global.Security;
+package FoV.LoTs.Global.Security;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

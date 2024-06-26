@@ -1,9 +1,9 @@
-package fov.lots.DB.Repository;
+package FoV.LoTs.DB.Repository;
 
 import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import fov.lots.DB.Entity.User;
+import FoV.LoTs.DB.Entity.User;
 
 import java.util.Optional;
 
