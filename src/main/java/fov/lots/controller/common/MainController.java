@@ -1,4 +1,4 @@
-package fov.lots.Controller.common;
+package FoV.LoTs.controller.common;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
